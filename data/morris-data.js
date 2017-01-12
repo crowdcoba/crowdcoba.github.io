@@ -4,58 +4,38 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            report: 12,
+            hotspot: 30,
+            tweet: 250
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
-        }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
-        }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            report: 10,
+            hotspot: 24,
+            tweet: 150
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            report: 25,
+            hotspot: 35,
+            tweet: 300
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
-        }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
-        }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
-        }, {
+            report: 10,
+            hotspot: 25,
+            tweet: 180
+        },  {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            report: 35,
+            hotspot: 30,
+            tweet: 350
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            report: 37,
+            hotspot: 40,
+            tweet: 307
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['report', 'hotspot', 'tweet'],
+        labels: ['report', 'hotspot', 'iPod Touch'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -64,14 +44,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "Report",
+            value: 37
         }, {
-            label: "In-Store Sales",
-            value: 30
+            label: "Hotspot",
+            value: 40
         }, {
-            label: "Mail-Order Sales",
-            value: 20
+            label: "Verified Hotspot",
+            value: 25
         }],
         resize: true
     });
